@@ -1,12 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Arquivo extends CI_Controller {
     
     public function index()
 	{
-		$this->load->view('home');
-        // Code..
-        // Mude o nome da class
+		$this->load->helper(array('url','html'));
+		$this->load->view('exemplo');
 	}
         
 }
